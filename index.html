@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      background: #333;
+      color: white;
+      margin: 0 0 10px 0;
+      padding: 15px;
+      font-size: 22px;
+      border-radius: 8px;
+    }
+
+    .icon {
+      display: block;
+      margin: 10px auto 10px auto;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .developer-text {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+    }
+
+    .red { background-color: #e74c3c; }
+    .green { background-color: #27ae60; }
+    .blue { background-color: #2980b9; }
+    .black { background-color: #2c3e50; }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+    .watch-video-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.watch-video-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.02);
+}
+
+.video-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MOSESTER ACADEMY</h1>
+
+    <!-- Icon image below heading -->
+    <img src="https://i.imgur.com/tYRbupF.jpeg" alt="System Icon" class="icon">
+
+    <!-- Developer text below icon -->
+    <div class="developer-text">
+      Developed by Masomo Digital Library. Tel: 0715399449
+    </div>
+    <a href="https://masomodigital.github.io/addnewstudi-MOSESTER/" class="button green">ADD NEW STUDENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbzjgiGHLkl_sqcKCuNHTA8sIUc1ZuT-EXOgKJXGf7OI9uj0a_JOyCVKzj9eFb18Qe9m/exec" class="button red">UPDATE STUDENT RECORD</a>
+    <a href="https://script.google.com/macros/s/AKfycbyJJEekMbkahmulS8z3lY9eRTCJQfHZzleYT9gh2gav6qcpVbk3FbMcHXFfLbUX8KRl/exec" class="button blue">RECEIVE FEE / CHECK BALANCE</a>
+    <a href="https://script.google.com/macros/s/AKfycbybvpnKjPLC9wPbw-kwm0a4XCl0Ap94Hkag4y33qU78VSTTzL1Qd4nl-zv9l2sgcQItFg/exec" class="button black">FEE BALANCE PER CLASS</a>
+    <a href="https://script.google.com/macros/s/AKfycbzxCOjhmx2PqyxlD86opEsarmZK8s1Tpoo-5-DXpP-ru5ja8854ozejEsNyniXG6jxgRQ/exec" class="button red">TOTAL EXPECTED COLLECTIONS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxEsBg3OYccZmHl_7ePw3ZjM8dtV85CiowahYDa43LVAnxFjh2MhVseyRUczKRtWHpnIg/exec" class="button green">STUDENT LIST PER GRADE</a>
+    <a href="https://masomodigital.github.io/FEESTRUCTURE-MOSESTER/" class="button blue">UPDATE FEE STRUCTURE</a>
+    <a href="https://script.google.com/macros/s/AKfycbwa_iHUhoz9egL0fCw-iSTDzTR6QeoFYLkt9y2GtXSfNfJKz6pP4J3Bzg0KwfcK74LX/exec" class="button black">DELETE STUDENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbxkzdT3h_zUUApwCA7Yya2w8oYbrmnyDo25RnbOKFAw2XQ3-UFEQ956SXX4xLm06D0jAg/exec" class="button red">CREATE LETTERS</a>
+    <a href="https://script.google.com/macros/s/AKfycbyeBY_5c3lbM2QOdPPeuOFGQm8AyQmy139I90bCtos4OBxn7GrLR9vNJSJlzaWbbTNSKw/exec" class="button green">PRINT LATE RECEIPTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbwGz2SMHV96F4cGkzW-AG2AgdUkuPrITBV6E0NUlNhecfSlrUNQM0LgDD4qhTUy29NJ/exec" class="button black">STUDENT FEE SUMMARY</a>
+    <a href="https://masomodigital.github.io/PAYMENT-HISTORY-MOSESTER/" class="button red">STUDENT PAYMENT HISTORY</a>
+    <a href="https://script.google.com/macros/s/AKfycbxJcsWLdIhss3hwJOPCDfazxwgkO56bK0Kp3WDWv4K7qC1SVQKBxwQ54KC10KInusho5g/exec" class="button blue">CORRECT PAYMENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbxcKR1SHI_c0qZwe2ufVM3K3qwVPtfsraRxlkzlbu_wFQbAMD1L5fR-j4dqV-59bPK1/exec" class="button black">UPDATE TERM</a>
+    <a href="https://script.google.com/macros/s/AKfycbw2TTcfKN56ZkBj_2vCI9m2j8AzrMJng9n8gvQG73X5nq4V2PSNF-txwDvWljqFraksmQ/exec" class="button blue">SEND SMS TO PARENTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbx0KhePeCGWtcV4xc9EFY3NyYDL56oylgQzlf0jXvjRQvB0Sq6Rjf7ndsYvWQN27oZFjQ/exec" class="button black">GIVE DISCOUNTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxqqzl0MVVh7mMRhCHd4Olaa7TnsG3B4HC-R9CZzrvAxq0EY_H2hrtu93Ik04LNbpChXg/exec" class="button red">VIEW DISCOUNTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxEomiouPPbAGPTs42b9_eiti1yYi6dbyGYYtZ52J2FhRrcHdC16FTjrr0mPxdMBZ3I/exec" class="button blue">SPECIAL FEES ALLOCATIONS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxuiVGlCUDmYCaUgoB9-0IM3QL7_ZAYNCqM6h1oSumkjoW1s3A8DP5A6FosHrcHLyaKqg/exec" class="button green">CHECK SPECIAL FEES ALLOCATION</a>
+    <a href="https://script.google.com/macros/s/AKfycbzV1z3aEm2h6zIopFgwKNx6jQWwweizHsPk6l9k0pnDia-Jjci8Gl2uVPPvPpYbLOBl/exec" class="button black">SEND SMS FEE REMINDERS</a>
+    <a href="https://script.google.com/macros/s/AKfycbw5bitpN3VRTqvyq5ztQ3wsnbzZrN4IieNZ-aZbY7PeWld9p4O-8Sv_99bD7MwIA9YU/exec" class="button red">CHECK BULK SMS BALANCE</a>
+        <p style="text-align: center; font-size: 15px; color: #333; margin-top: 25px;">
+      Below is a video to help you understand how the system works. Click the button to watch the video.
+    </p>
+
+    <a href="https://screenapp.io/app/#/shared/4wNQZsY7jZ" target="_blank" class="watch-video-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="video-icon" viewBox="0 0 24 24" fill="white">
+        <circle cx="12" cy="12" r="10" fill="#e74c3c"/>
+        <polygon points="10,8 16,12 10,16" fill="white"/>
+      </svg>
+      Click here to watch video
+    </a>
+</div>
+</body>
+</html>
